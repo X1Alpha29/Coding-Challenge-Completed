@@ -6,6 +6,11 @@ Postman has been used to test the back-end for API communication for each task (
 Additionally, implementing the rating system correctly took some iteration. At first, users could only add comments, and the rating was hardcoded to 5 stars. I had to modify the UI and API to allow users to provide a rating manually.
 Styling the frontend was also a smaller, somewhat enjoyable challenge. While Tailwind was initially considered, I opted to use plain CSS to avoid potential issues with configuration and integration. Creating a responsive and visually structured layout using CSS required additional effort.
 
+During the project setup, the mogul-frontend folder was mistakenly recognized as a Git submodule. This caused issues when trying to push the folder to GitHub, as submodules require separate repositories.
+To be able to partly fix this issue and to complete the test I had to move the key front-end files into another new folder (front-end). These files that I have modified were not part of the automatically generated front-end files.
+This ensured that the frontend files were properly tracked and uploaded to GitHub as proof of completion. 
+
+
 Potential Imrovements for a real product
 1. Implement a database to persist data and ensure it remains even after server restarts.
 2. Integrate a more robust authentication system to handle user sessions and permissions.
